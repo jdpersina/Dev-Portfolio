@@ -1,7 +1,18 @@
+require_once 'db.php'
+
 <?php
 session_start();
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     header('Location: login.php');
+    exit;
+}
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $title = htmlspecialchars($_POST['title']);
+    $content = htmlspecialchars($_POST['content']);
+    $sql = "INSERT INTO posts (title, content) VALUES (?, ?)";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$title, $content]);
+    header('Location: admin.php');
     exit;
 }
 ?>
