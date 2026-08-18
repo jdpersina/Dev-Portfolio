@@ -10,7 +10,7 @@ $posts = $stmt->fetchAll();
 
 <main class="flex-1 max-w-3xl mx-auto px-6 py-16 w-full">
 
-<div class="sticky top-0 z-10 pt-6 pb-10 bg-gradient-to-b from-zinc-950 from-50% to-transparent">
+<div id="blog-sub-header" class="sticky top-0 z-10 pt-6 pb-10 bg-gradient-to-b from-zinc-950 from-50% to-transparent">
     <h1 class="text-3xl font-light text-zinc-100 mb-12">Blog</h1>
 </div>
 
