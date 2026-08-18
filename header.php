@@ -4,17 +4,19 @@
     <title>Dan's Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-gray-300 min-h-screen flex flex-col">
-    <header>
-        <h1>Hello, <?php $name = "Dan"; echo $name; ?></h1>
-        <nav class="bg-gray-300 p-4 rounded-lg shadow-md text-black">
-            <ul class="flex gap-6 justify-center">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="projects.php">Projects</a></li>
-                <li><a href="blog.php">Blog</a></li>
-                <li><a href="resume.php">Resume</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="login.php">Login</a></li>
+<body class="bg-zinc-950 text-zinc-300 font-sans min-h-screen flex flex-col">
+    <header class="py-6">
+        <h1 class="text-2xl font-semibold text-zinc-100 text-center mb-4">
+            Hello, <?php $name = "Dan"; echo $name; ?>
+        </h1>
+        <nav>
+            <ul class="flex gap-6 justify-center text-xl font-mono tracking-wider text-zinc-400">
+            <li><a href="index.php" class="hover:text-zinc-100 transition-colors">Home</a></li>
+                <li><a href="projects.php" class="hover:text-zinc-100 transition-colors">Projects</a></li>
+                <li><a href="blog.php" class="hover:text-zinc-100 transition-colors">Blog</a></li>
+                <li><a href="resume.php" class="hover:text-zinc-100 transition-colors">Resume</a></li>
+                <li><a href="contact.php" class="hover:text-zinc-100 transition-colors">Contact</a></li>
+                <li><a href="login.php" class="hover:text-zinc-100 transition-colors">Login</a></li>
             </ul>
         </nav>
     </header>
